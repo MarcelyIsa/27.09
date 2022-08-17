@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>27.09</title>
+    <link rel="shortcut icon" href="./imagens/icopes.png" type="image/x-icon">
+<style>
+  body {
+    background-image:url(./imagens/pes_confusos.png) ;
+    font-family: Arial, Helvetica, sans-serif;
+  }  
+div{
+background-color: #3e065f;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+border-radius: 15px;
+padding: 30px 35px;
+}
+input {
+  padding: 10px;
+  border-radius: 15px; 
+  border: none; 
+  outline: none;
+  font-size: 13px;
+}
+.log{
+    color: aliceblue;
+    text-align: center;
+}
+.botao{ 
+   width: 100%;
+   background-color: white; 
+   border: none;
+   border-radius: 15px;
+   padding: 10px;
+   color: rgb(112, 112, 112); 
+   font-size: 13px;
+}
+button:hover{
+    background-color: rgb(204, 204, 204);
+    cursor: pointer;
+}           
+</style>
+
+</head>
+<body>
+  <!--Para de olhar meu código, porque aqui tem respostas-->
+  
+  
+<div>
+    <h1 class="log">LOGIN</h1>
+    <input type="text" id="usuario"  placeholder="Usuário"> 
+<br>
+<br>
+    <input type="password" id="senha"   placeholder="Senha">
+    <br>
+<br>
+<input class="botao" type="submit" onclick="logar(); return false">
+</div>
+<script>
+  /*aqui tem respostas, não olha*/
+  function logar(){
+    var login = document.getElementById('usuario').value;
+    var senha = document.getElementById('senha').value;
+
+    if(login == "MistoCrente01" && senha =="42596"){
+      alert('Você arrasou!!')
+        location.href = "pagperfil.html";
+
+    }else{
+        alert('Não deu certo :C')
+    }
+  }         
+
+</script>
+
+</body>
